@@ -247,6 +247,17 @@
 
     <footer class="app-footer">
       <span data-i18n="footer">مفت اور آف لائن — اردو بولنے والوں کے لیے ❤️</span>
+      <div class="visitor-counter" aria-label="Visitor counter">
+        <span class="visitor-label" data-i18n="visitorCount">وزٹرز</span>
+        <a href="https://besucherzaehler.gratis/?language=en&ID=xl8saif-urducalc" target="_blank" rel="noopener noreferrer" class="visitor-counter-link" title="Visitor statistics">
+          <img
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            id="urducalcVisitorCounter"
+            alt="Visitor count"
+            width="88"
+            height="31">
+        </a>
+      </div>
       <button class="footer-credit" id="btnAbout" type="button" data-i18n="aboutBtn">ڈیولپر کا تعارف</button>
     </footer>
   </div>
@@ -303,6 +314,19 @@
         });
       });
     }
+  </script>
+  <script>
+    (function () {
+      var counter = document.getElementById("urducalcVisitorCounter");
+      if (!counter) return;
+      var endpoint = "https://besucherzaehler.gratis/counter.php?ID=xl8saif-urducalc&STYLE=3300";
+      counter.src = endpoint
+        + "&LANG=" + encodeURIComponent(navigator.language || "")
+        + "&RES=" + encodeURIComponent(screen.width + "x" + screen.height)
+        + "&REF=" + encodeURIComponent(document.referrer || "")
+        + "&LOC=" + encodeURIComponent(location.href)
+        + "&NAVI=" + encodeURIComponent(navigator.userAgent || "");
+    })();
   </script>
   <script src="js/i18n.js"></script>
   <script src="js/calculator.js"></script>
