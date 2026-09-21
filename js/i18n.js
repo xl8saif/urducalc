@@ -16,6 +16,7 @@
     tabZakat: { ur: "زکوٰۃ", en: "Zakat" },
     tabConv: { ur: "کنورٹر", en: "Convert" },
     footer: { ur: "مفت اور آف لائن — اردو بولنے والوں کے لیے ❤️", en: "Free & offline — made for Urdu speakers ❤️" },
+    visitorCount: { ur: "وزٹرز", en: "Visitors" },
 
     // ---- about / credits ----
     aboutBtn: { ur: "ڈیولپر کا تعارف", en: "About the Developer" },
