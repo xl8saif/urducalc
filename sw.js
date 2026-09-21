@@ -4,7 +4,7 @@
      - navigations (HTML): network-first, fall back to cache (offline works)
      - assets (css/js/icons/manifest/fonts/images): cache-first, refreshed in background
    ============================================================ */
-const CACHE_VERSION = "urdu-calc-v15";
+const CACHE_VERSION = "urdu-calc-v16";
 const APP_SHELL = [
   "./",
   "./index.html",
