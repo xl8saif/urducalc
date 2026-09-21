@@ -151,3 +151,30 @@ html[dir="ltr"] * { font-family: "Segoe UI", system-ui, -apple-system, Tahoma, s
 .calc-screen, .zakat-table td:last-child { text-align: end; }
 html[dir="ltr"] .brand-title,
 html[dir="ltr"] .brand-sub { text-align: start; }
+
+
+/* Visitor counter — external, privacy-conscious static-site counter */
+.visitor-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 31px;
+  color: var(--ink-dim);
+}
+.visitor-label {
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+}
+.visitor-counter-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  border-radius: 6px;
+}
+.visitor-counter-link img {
+  display: block;
+  width: 88px;
+  height: 31px;
+  max-width: 100%;
+}
